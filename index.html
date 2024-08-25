@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="tic.css">
+    <script src="tic.js" defer></script>
+</head>
+
+<body style="background-color: rgba(137, 43, 226, 0.051);">
+    <div id="main">
+        <h1>TIC TAC TOE</h1>
+        <p id="ins">
+            Game starts by just tapping on the Grid!<br><br>
+            First Player starts as <span class="Player - X" style="color: red;">Player - X</span> and Second Player as
+            <span class="Player - O" style="color: green;">Player - O</span>
+        </p>
+        <div id="button-container">
+            <div class="dropdown">
+                <button id="play-ai" class="option-button">Play with AI</button>
+                <div class="dropdown-content">
+                    <button onclick="selectAILevel('easy')">Easy &#128512;</button>
+                    <button onclick="selectAILevel('medium')">Medium &#128079;</button>
+                    <button onclick="selectAILevel('hard')">Hard &#128511;</button>
+                </div>
+            </div>
+            <button id="play-friend" class="option-button" onclick="selectFriend()">Play with Friend</button>
+        </div>
+        <div class="ui">
+            <div class="row">
+                <input type="text" id="b1" class="cell" onclick="handleClick(0)" readonly>
+                <input type="text" id="b2" class="cell" onclick="handleClick(1)" readonly>
+                <input type="text" id="b3" class="cell" onclick="handleClick(2)" readonly>
+            </div>
+            <div class="row">
+                <input type="text" id="b4" class="cell" onclick="handleClick(3)" readonly>
+                <input type="text" id="b5" class="cell" onclick="handleClick(4)" readonly>
+                <input type="text" id="b6" class="cell" onclick="handleClick(5)" readonly>
+            </div>
+            <div class="row">
+                <input type="text" id="b7" class="cell" onclick="handleClick(6)" readonly>
+                <input type="text" id="b8" class="cell" onclick="handleClick(7)" readonly>
+                <input type="text" id="b9" class="cell" onclick="handleClick(8)" readonly>
+            </div>
+        </div>
+        <button id="reset" onclick="resetGame()">RESET</button>
+        <p id="print"></p>
+    </div>
+</body>
+
+</html>

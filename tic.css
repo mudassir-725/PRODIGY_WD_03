@@ -1,0 +1,146 @@
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    color: blueviolet;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    opacity: 90%;
+}
+
+.ui {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80px;
+    margin: 5px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.cell:hover {
+    background-color: #f8f4fd;
+}
+
+#reset {
+    width: 75px;
+    height: 35px;
+    margin-top: 30px;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    background-color: white;
+    color: blueviolet;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#reset:hover {
+    transition: all 0.3s ease-out;
+    transform: scale(1.1);
+    background-color: blueviolet;
+    color: aliceblue;
+    border-color: aliceblue;
+}
+
+#print {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+#main {
+    text-align: center;
+}
+
+#button-container {
+    margin-bottom: 20px;
+}
+
+.option-button {
+    width: 130px;
+    height: 35px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid blueviolet;
+    background-color: white;
+    color: blueviolet;
+}
+
+.option-button:hover {
+    transition: all 0.3s ease-out;
+    transform: scale(1.1);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    box-shadow: 5px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    /* border-radius: 5px; */
+}
+
+.dropdown-content button {
+    width: 100%;
+    border: none;
+    background-color: white;
+    color: blueviolet;
+    padding: 10px 15px;
+    text-align: left;
+    cursor: pointer;
+    border-bottom: 1px solid blueviolet;
+    border-radius: 5px;
+
+}
+
+.dropdown-content button:hover {
+    background-color: #dedddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .cell {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+}
