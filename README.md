@@ -47,11 +47,11 @@ TIC-TAC-TOE is a two-player game where players take turns to mark spaces in a 3x
 
 ## 📁 Project Structure
 
-tic-tac-toe/
-│
-├── index.html       # Main HTML file
-├── tic.css          # Stylesheet for the game
-└── tic.js           # JavaScript file for game logic and AI
+###### tic-tac-toe/
+###### │
+###### ├── index.html       # Main HTML file
+###### ├── tic.css          # Stylesheet for the game
+###### └── tic.js           # JavaScript file for game logic and AI
 
 
 
